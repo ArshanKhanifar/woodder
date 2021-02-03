@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 
-class Wooder(object):
+class Woodder(object):
     DEFAULT_LOG_DIR = "logs"
 
     @staticmethod

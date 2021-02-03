@@ -5,7 +5,7 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 setup(
-    name="wooder",
+    name="woodder",
     version="1.0.0",
     description="A really simple logger configurator for Python 3.",
     long_description=README,

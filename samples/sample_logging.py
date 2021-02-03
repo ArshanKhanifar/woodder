@@ -1,11 +1,11 @@
 import logging
-from src.wooder import Wooder
+from src.woodder import Woodder
 
 
 if __name__ == '__main__':
     project_name = "my_project"
     log_dir = "my_logs"
-    Wooder.configure_logging(project_name, log_dir=log_dir)
+    Woodder.configure_logging(project_name, log_dir=log_dir)
 
     logger = logging.getLogger("my-logger")
 

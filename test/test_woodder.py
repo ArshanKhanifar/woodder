@@ -1,15 +1,15 @@
 import logging
 from pathlib import Path
-from src.wooder import Wooder
+from src.woodder import Woodder
 
 
-class TestWooder(object):
+class TestWoodder(object):
     def test_logger_creates_correct_directory_and_file(self, tmpdir):
         project_name = "arshan123"
         log_dir_name = "some_logs"
         log_dir_path = tmpdir.join(log_dir_name)
         assert log_dir_path.exists() is False
-        Wooder.configure_logging(project_name, log_dir=log_dir_path.strpath)
+        Woodder.configure_logging(project_name, log_dir=log_dir_path.strpath)
         assert log_dir_path.exists() is True
         assert len(log_dir_path.listdir()) > 0
         log_file = log_dir_path.listdir()[0]
@@ -18,7 +18,7 @@ class TestWooder(object):
     def test_configure_logging_logs_have_the_correct_format(self, tmpdir):
         (project_name, log_dir_name, logger_name) = ("arshan123", "some_logs", "arshanlogger")
         log_dir_path = tmpdir.join(log_dir_name)
-        Wooder.configure_logging(project_name, log_dir=log_dir_path.strpath)
+        Woodder.configure_logging(project_name, log_dir=log_dir_path.strpath)
         log_file = log_dir_path.listdir()[0]
         logger = logging.getLogger(logger_name)
 

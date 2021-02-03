@@ -9,13 +9,13 @@ Here's how you use it:
 ```
 # In a file named: sample_logging.py
 import logging
-from src.wooder import Wooder
+TODO: put wooder import
 
 
 if __name__ == '__main__':
     project_name = "my_project"
     log_dir = "my_logs"
-    Wooder.configure_logging(project_name, log_dir=log_dir)
+    Woodder.configure_logging(project_name, log_dir=log_dir)
 
     logger = logging.getLogger("my-logger")
 
