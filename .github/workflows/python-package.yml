@@ -37,6 +37,10 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        echo "path"
-        echo $PYTHONPATH
+        echo "path: $PYTHONPATH"
+        echo "PWD: "
+        pwd
+        echo "LS: "
+        ls
+        echo "workspace: $GITHUB_WORKSPACE"
         pytest
