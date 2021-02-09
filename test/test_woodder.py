@@ -1,6 +1,7 @@
 import logging
 from pathlib import Path
-from src.woodder import Woodder
+
+from woodder import Woodder
 
 
 class TestWoodder(object):

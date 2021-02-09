@@ -1,6 +1,6 @@
 import logging
-from src.woodder import Woodder
 
+from woodder import Woodder
 
 if __name__ == '__main__':
     project_name = "my_project"
